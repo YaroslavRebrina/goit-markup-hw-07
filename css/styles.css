@@ -314,7 +314,7 @@ margin-left: 50px;
 
 }
 
-.section-hero-header{
+.section-hero__header{
     max-width: 696px;
     margin: 0  auto;
 
@@ -328,20 +328,12 @@ margin-left: 50px;
 }
 
 
-.section-hero .button{
+.section-hero_button{
     width: 216px;
     height: 50px;
     border-radius: 4px; 
     border: none;
     padding: 10px 0;
-}
-
-.section-hero .header-img{
-    display: flex;
-    justify-items: center;
-    width: 16px;
-    height: 12px;
-    
 }
 
 /* section hero modal */
