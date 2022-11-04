@@ -108,12 +108,12 @@ img{
     letter-spacing: 0.03em;
 }
 
-.header_logo{
+.logo--header{
     color: #000;
 }
 
 
-.footer .logo-studio {
+.logo--inversed{
     color: #fff;
 }
 
@@ -174,7 +174,7 @@ img{
     
 }
 
-.nav-bar-footer a{
+.footer__bar a{
     color: var(--secondary-txt-color-footer);
     font-style: normal;
     font-size: 14px;
@@ -732,14 +732,17 @@ margin-left: 50px;
     letter-spacing: 0.03em;
 }
 
-.social-list{
+.social{
     display: flex;
     justify-content: center;
     gap: 10px;
-    margin-top: 16px;
 }
 
-.social-link{
+.social-team{
+margin-top: 16px;
+}
+
+.social__link--team{
     display: flex;
     justify-content: center;
     width: 44px;
@@ -752,19 +755,22 @@ margin-left: 50px;
     background-color 250ms var(--cubic-primary);
 }
 
-.social-link:hover,
-.social-link:focus{
+.social__link--team:hover,
+.social__link--team:focus{
     background-color: var(--accent-bg-cl);
     color: var(--icons-secondary);
 }
 
 
-.social-icons{
+.social__icons--team{
     width: 20px;
     height: 20px;
     fill: currentColor;
-}
 
+}
+.social__team {
+    margin-top: 16px;
+}
 
 /* our clients */
 
@@ -823,14 +829,16 @@ margin-left: 50px;
     fill: var(--accent-bg-cl);
 }
 
+
 /* footer */
+
 
 .footer{
     padding: 60px 0;
     background-color: var(--main-bg-cl);
 }
 
-.join{
+.footer__join{
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
@@ -843,18 +851,18 @@ margin-left: 50px;
     
 }
 
-.footer .flexbox{
+.footer__flexbox{
     display: flex;
     align-items: baseline;
 }
 
-.footer .logo{
+.footer__logo{
     display: block;
     margin-bottom: 20px;
 }
 
 
-.nav-bar-footer .item:not(:last-child){
+.footer__item:not(:last-child){
     margin-bottom: 10px;
 }
 .physical-address{
@@ -864,26 +872,28 @@ margin-left: 50px;
     font-style: normal;
 }
 
-.nav-link-footer{
+.footer__link{
     text-decoration: none;
     color: var(--secondary-txt-color-footer);
 
     transition: color 250ms var(--cubic-primary);
 }
-.nav-link-footer:hover,
-.nav-link-footer:focus {
+.footer__link:hover,
+.footer__link:focus {
     color: var(--accent-txt-cl);
 }   
 
-.footer .social-links {
+.social{
     display: flex;
     justify-content: center;
     gap: 10px;
-    padding-bottom: 30px;
-
 }
 
-.footer .social-link {
+.social__footer{
+padding-bottom: 30px;
+}
+
+.social__link {
     display: flex;
     justify-content: center;
     width: 44px;
@@ -894,28 +904,28 @@ margin-left: 50px;
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-.flexbox-logo-address{
+.footer__nav{
     margin-right: 70px;
 }
-.footer .social-icons {
+.social__icons {
     width: 20px;
     height: 20px;
     align-items: center;
     fill: var(--icons-secondary);
 }
 
-.footer .social-link:hover,
-.footer .social-link:focus{
+.footer .social__link:hover,
+.footer .social__link:focus{
     background-color: var(--accent-bg-cl);
 }
 
 /* footer-form */
 
-.subscription-thumb{
+.subscription{
     margin-left: auto;
 }
 
-.subscription-header{
+.subscription__header{
     display: block;
     margin-bottom: 20px;
 
@@ -929,16 +939,13 @@ margin-left: 50px;
     color: var(--footer-txt-color);
 }
 
-.footer-form{
+.subscription__form{
     display: flex;
     gap: 12px;
 }
 
-.footer-form .flexbox{
-    display: flex;
-}
 
-.footer-form .input-email{
+.subscription__input{
     width: 358px;
     height: 50px;
     border: 1px solid var(--form-border-color);
@@ -951,11 +958,11 @@ margin-left: 50px;
     transition: border-color 250ms var(--cubic-primary);
 }
 
-.footer-form .input-email:focus{
+.subscription__input:focus{
     border-color: var(--focus-form-border-color);
 }
 
-.footer .button {
+.subscription__button{
     display: inline-flex;
     background-color: var(--form-button-color);
     align-items: center;
@@ -973,13 +980,13 @@ margin-left: 50px;
     transition: background-color 250ms var(--cubic-primary); 
 }
 
-.footer .button:focus, 
-.footer .button:hover{
+.subscription__button:focus, 
+.subscription__button:hover{
     background-color: var(--form-focus-button-color);
    
 }
 
-.footer  .form-img{
+.subscription__img{
     width: 24px;
     height: 24px;
     margin-left: 10px;
