@@ -108,7 +108,7 @@ img{
     letter-spacing: 0.03em;
 }
 
-.logo--header{
+.logo--primary{
     color: #000;
 }
 
@@ -119,21 +119,24 @@ img{
 
 /* navigation bar */
 
-.header__bar.list{
+.navigation__bar{
 
     display: flex;
     align-items: center;
 }
 
- .header__bar .header__item{
+ .navigation__item{
     position: relative;
 }
 
 
-
-.header__bar .header__item:not(:first-child){
+.navigation__item:not(:first-child){
     margin-left: 50px;
 }
+
+
+ /* contacts */
+
 
 .header__contacts.list{
     margin-left: auto;
